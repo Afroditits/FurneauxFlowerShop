@@ -1,0 +1,262 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #47353a;
+}
+
+/* Header */
+header {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+}
+header img {
+    float: left;
+}
+header nav {
+    float: right;
+}
+header a {
+    font-family: 'David Libre';
+    font-size: 1.2rem;
+    text-decoration-line: none;
+    text-decoration-thickness: 2px;
+    color: black;
+    margin: 0 0 0 15px;
+    color: #47353a;
+}
+header a:hover {
+    text-decoration-line: underline;
+    color: black;
+}
+
+/* Hero */
+.hero {
+    margin-top: 60px;
+}
+.heroinner {
+    font-family: 'David Libre';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.heroinner h1 {
+    color: #48353a;
+    font-weight: 600;
+    line-height: 5rem;
+    font-size: 64px;
+}
+.heroinner button {
+    margin: auto;
+    color: #eeae9f;
+    border-radius: 20px;
+    width: 150px;
+    padding: 10px;
+}
+
+/* Flower Section */
+section .flowers {
+    max-width: fit-content;
+}
+.flowers img {
+    width: 33%;
+    padding: 0;
+}
+
+/* Quote section */
+.quotes {
+    display: flex;
+    width: 50%;
+    height: auto;
+    align-items: center;
+    max-width: fit-content;
+}
+.quotes img {
+        border-radius: 100%;
+        width: 77px !important;
+}
+section .livquote {
+    background-color: #f7f1ee;
+    width: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+section .chelseaquote {
+    margin-left: 220px;
+    padding: 15px;
+    padding-right: inherit;
+    width: auto;
+}
+
+/* Last image section */
+section .fullbleed img {
+    width: 100%;
+}
+
+/* Logo section */
+section .logos {
+    background-color: rgb(238, 174, 159);
+    height: 160px;
+    max-width: inherit;
+    padding: 20px;
+}
+section .logos .innerlogo {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+}
+section .logos img {
+    padding: 10px; 
+    width: 18%;
+}
+
+/* Footer */
+footer {
+    color: #ccc9ca;
+    background-color: rgb(72, 53, 58);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+footer img {
+    width: 90px;
+}
+footer p {
+    font-size: 12px;
+    padding-top: inherit;
+}
+
+/* Media */
+@media screen and (max-width: 2500px) {
+    .hero p {
+        font-size: larger;
+        padding-bottom: 24px;
+    }
+    section .chelseaquote {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    section .chelseaquote {
+        max-width: fit-content;
+    }
+    section .logos {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    section .flowers img {
+        width: 97%;
+    }
+    footer p {
+        padding-right: 10px;
+    }
+    section .quotes h4 {
+        font-size: 24px;
+    }
+    section .quotes {
+        font-size: 18px;
+    }
+    section .livquote {
+        margin-top: -50px;
+    }
+    section .chelseaquote {
+        margin-left: 70px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section .chelseaquote {
+        margin-left: auto;
+    }
+    section .flowers {
+        max-width: inherit;
+    }
+    footer p {
+        padding-right: 2px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    section .logos .innerlogoimg img {
+        flex-flow: wrap;
+        width: 23%;
+    }
+}
+
+@media (max-width:620px) {
+    footer img {
+      width: auto;
+      max-width: inherit;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero h1 {
+        font-size: 35px;
+        font-weight: 700;
+    }
+    section .logos {
+        height: inherit;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    section .flowers img {
+        width: 97%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    section .logos .innerlogoimg img {
+        flex-flow: wrap;
+        width: 90px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    section .flowers {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    section .heroinner p {
+        font-size: 16px;
+        padding-bottom: 19px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    section .logos .innerlogoimg img {
+        width: 28%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    section .logos {
+        display: none;
+    }
+    .hero {
+        margin-top : -70px;
+    }
+}
+
+@media screen and (max-width: 274px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+    .hero p {
+        font-size: 10px;
+    }
+}
+
